@@ -1,6 +1,8 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@swc/core': ^1.2.155
+  '@swc/jest': ^0.2.20
   '@types/jest': ^26.0.24
   '@types/node': ^16.11.10
   '@typescript-eslint/eslint-plugin': ^4.33.0
@@ -17,6 +19,8 @@ specifiers:
   typescript: ^4.5.2
 
 devDependencies:
+  '@swc/core': 1.2.155
+  '@swc/jest': 0.2.20_@swc+core@1.2.155
   '@types/jest': 26.0.24
   '@types/node': 16.11.10
   '@typescript-eslint/eslint-plugin': 4.33.0_d00b196ac5df1286ea7e45797bebddbc
@@ -29,7 +33,7 @@ devDependencies:
   jest: 27.3.1_ts-node@10.4.0
   prettier: 2.5.0
   ts-jest: 27.0.7_03b6652e1bfdf1dbfee172bee07ee843
-  ts-node: 10.4.0_36929cccfdb926da0bb85cc291f27124
+  ts-node: 10.4.0_202a419292d2f3918204c39fdda8a578
   typescript: 4.5.2
 
 packages:
@@ -498,6 +502,13 @@ packages:
       - utf-8-validate
     dev: true
 
+  /@jest/create-cache-key-function/27.5.1:
+    resolution: { integrity: sha512-dmH1yW+makpTSURTy8VzdUwFnfQh1G8R+DxO2Ho2FFmBbKFEVm+3jWdvFhE2VqB/LATCTokkP0dotjyQyw5/AQ== }
+    engines: { node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0 }
+    dependencies:
+      '@jest/types': 27.5.1
+    dev: true
+
   /@jest/environment/27.3.1:
     resolution: { integrity: sha512-BCKCj4mOVLme6Tanoyc9k0ultp3pnmuyHw73UHRPeeZxirsU/7E3HC4le/VDb/SMzE1JcPnto+XBKFOcoiJzVw== }
     engines: { node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0 }
@@ -643,6 +654,17 @@ packages:
       chalk: 4.1.2
     dev: true
 
+  /@jest/types/27.5.1:
+    resolution: { integrity: sha512-Cx46iJ9QpwQTjIdq5VJu2QTMMs3QlEjI0x1QbBP5W1+nMzyc2XmimiRR/CbX9TO0cPTeUlxWMOu8mslYsJ8DEw== }
+    engines: { node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0 }
+    dependencies:
+      '@types/istanbul-lib-coverage': 2.0.3
+      '@types/istanbul-reports': 3.0.1
+      '@types/node': 16.11.10
+      '@types/yargs': 16.0.4
+      chalk: 4.1.2
+    dev: true
+
   /@nodelib/fs.scandir/2.1.5:
     resolution: { integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g== }
     engines: { node: '>= 8' }
@@ -674,6 +696,153 @@ packages:
     resolution: { integrity: sha512-OAPJUAtgeINhh/TAlUID4QTs53Njm7xzddaVlEs/SXwgtiD1tW22zAB/W1wdqfrpmikgaWQ9Fw6Ws+hsiRm5Vg== }
     dependencies:
       '@sinonjs/commons': 1.8.3
+    dev: true
+
+  /@swc/core-android-arm-eabi/1.2.155:
+    resolution: { integrity: sha512-5gFUHeKvdifHgIxu5wc20r0W3WjBYazbZ91u6uT4NUasBDf44k7HvmXMi5r0+QDWX739hy17WzNqKyfnWIHAVQ== }
+    engines: { node: '>=10' }
+    cpu: [ arm ]
+    os: [ android ]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-android-arm64/1.2.155:
+    resolution: { integrity: sha512-kqfcaPYZTXxgkm8E766SpygZhcbYLyoO+lTIH1BXuNPp8QJDg/y2/+woW3oFSSYlWG9G1AngaPefDX7UtD4xoQ== }
+    engines: { node: '>=10' }
+    cpu: [ arm64 ]
+    os: [ android ]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-darwin-arm64/1.2.155:
+    resolution: { integrity: sha512-UqEvicLmBy3+cjNCVQbcmVNKUhHnOFBEO6oJDPbWqxi/QH7aeAbU89lmQFYI1zwTlkjb5fq4nKAy2jxzZsOi9g== }
+    engines: { node: '>=10' }
+    cpu: [ arm64 ]
+    os: [ darwin ]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-darwin-x64/1.2.155:
+    resolution: { integrity: sha512-DenQBSr+g7iGfHgNv3iVIrEABtvPWvJKDv52EuKMzBwvffIW/jqgoEriCVCSFhXkfuJUFaMrCgb5vrKMtGnRdA== }
+    engines: { node: '>=10' }
+    cpu: [ x64 ]
+    os: [ darwin ]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-freebsd-x64/1.2.155:
+    resolution: { integrity: sha512-elOP8YppzGDjFpNW7PJ6OGAiF9LoQ6WBZknZGrdD7GBduqHX6+xAC1i2YKXLz0w3bXAJlEUijrKeGcqxD+tjIA== }
+    engines: { node: '>=10' }
+    cpu: [ x64 ]
+    os: [ freebsd ]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-linux-arm-gnueabihf/1.2.155:
+    resolution: { integrity: sha512-/octthMIQg8mhRRk84v+I6Rtj2FdwgxgaXvkwM4y1jl+hoQAFDI3mosJn4aFPW8gOSGKJVWASiJaBvQtBzx9Fg== }
+    engines: { node: '>=10' }
+    cpu: [ arm ]
+    os: [ linux ]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-linux-arm64-gnu/1.2.155:
+    resolution: { integrity: sha512-JdbRTK49pcsSrr98daB2ArWt/IFXhzh1JnXLgApMZVQIaGZnlCj2uRGZep8kLTZQ3CCJuM1QEk3ecJ0eDFLOAA== }
+    engines: { node: '>=10' }
+    cpu: [ arm64 ]
+    os: [ linux ]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-linux-arm64-musl/1.2.155:
+    resolution: { integrity: sha512-9cYJP9eKXDp+huJoP+7cRtK6QL2ydsgQpeQ0O6hpX1NmBM/slSCWj7eXBAKd89v1AoxQWoSJYeP3SzGg/uTCiA== }
+    engines: { node: '>=10' }
+    cpu: [ arm64 ]
+    os: [ linux ]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-linux-x64-gnu/1.2.155:
+    resolution: { integrity: sha512-hIi6epWH05yAVTrxB81/5/yILT/5mhw+n52JrZcUT1CkxCZJmPPLHrlLWR/A4QtPpwHUdNm01vn0hBWdDHWtxQ== }
+    engines: { node: '>=10' }
+    cpu: [ x64 ]
+    os: [ linux ]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-linux-x64-musl/1.2.155:
+    resolution: { integrity: sha512-HI2117+Y9vXwPIJOCWhAQHulyD1o+xNfiwjJeF42ukxKsBLoDm1STwNKbx8PUgWTAVwade9UG2YCskVX89OOGA== }
+    engines: { node: '>=10' }
+    cpu: [ x64 ]
+    os: [ linux ]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-win32-arm64-msvc/1.2.155:
+    resolution: { integrity: sha512-X/0Lg3ZR5ZCQi2tqUpSRIfzbgeU9RLxuPUWyIGA6lVsM4RHGCIgCJxvY2gTgDPPN5rSIr5y+4OhwqyuTAyBXFw== }
+    engines: { node: '>=10' }
+    cpu: [ arm64 ]
+    os: [ win32 ]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-win32-ia32-msvc/1.2.155:
+    resolution: { integrity: sha512-7c4sylnJy9nUB6wWDrMVktdQYnrSSt7wqXRh6ETOAVI6kwxrQQe9D7dJLXX9NzJZTIUfeK5rGWwUhZm3ATsRPg== }
+    engines: { node: '>=10' }
+    cpu: [ ia32 ]
+    os: [ win32 ]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-win32-x64-msvc/1.2.155:
+    resolution: { integrity: sha512-YXkO8IOtup0FN5bkQH5nIbft80SOAvRrNjqYx7KXSux3o5by15dEcQ11A67mc9WOtO+umGTquynh3S2bMdLaEQ== }
+    engines: { node: '>=10' }
+    cpu: [ x64 ]
+    os: [ win32 ]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core/1.2.155:
+    resolution: { integrity: sha512-rNJ4NWL0vqwAqHk2m/GKnveDHttsZGGDWxht3iQFdVMPHdreHTln7dYJl1U+Vzw5FG/nS/uqz+fc+Jd4EhAF/w== }
+    engines: { node: '>=10' }
+    hasBin: true
+    optionalDependencies:
+      '@swc/core-android-arm-eabi': 1.2.155
+      '@swc/core-android-arm64': 1.2.155
+      '@swc/core-darwin-arm64': 1.2.155
+      '@swc/core-darwin-x64': 1.2.155
+      '@swc/core-freebsd-x64': 1.2.155
+      '@swc/core-linux-arm-gnueabihf': 1.2.155
+      '@swc/core-linux-arm64-gnu': 1.2.155
+      '@swc/core-linux-arm64-musl': 1.2.155
+      '@swc/core-linux-x64-gnu': 1.2.155
+      '@swc/core-linux-x64-musl': 1.2.155
+      '@swc/core-win32-arm64-msvc': 1.2.155
+      '@swc/core-win32-ia32-msvc': 1.2.155
+      '@swc/core-win32-x64-msvc': 1.2.155
+    dev: true
+
+  /@swc/jest/0.2.20_@swc+core@1.2.155:
+    resolution: { integrity: sha512-5qSUBYY1wyIMn7p0Vl9qqV4hMI69oJwZCIPUpBsTFWN2wlwn6RDugzdgCn+bLXVYh+Cxi8bJcZ1uumDgsoL+FA== }
+    engines: { npm: '>= 7.0.0' }
+    peerDependencies:
+      '@swc/core': '*'
+    dependencies:
+      '@jest/create-cache-key-function': 27.5.1
+      '@swc/core': 1.2.155
     dev: true
 
   /@tootallnate/once/1.1.2:
@@ -2340,7 +2509,7 @@ packages:
       jest-validate: 27.3.1
       micromatch: 4.0.4
       pretty-format: 27.3.1
-      ts-node: 10.4.0_36929cccfdb926da0bb85cc291f27124
+      ts-node: 10.4.0_202a419292d2f3918204c39fdda8a578
     transitivePeerDependencies:
       - bufferutil
       - canvas
@@ -3589,7 +3758,7 @@ packages:
       yargs-parser: 20.2.9
     dev: true
 
-  /ts-node/10.4.0_36929cccfdb926da0bb85cc291f27124:
+  /ts-node/10.4.0_202a419292d2f3918204c39fdda8a578:
     resolution: { integrity: sha512-g0FlPvvCXSIO1JDF6S232P5jPYqBkRL9qly81ZgAOSU7rwI0stphCgd2kLiCrU9DjQCrJMWEqcNSjQL02s6d8A== }
     hasBin: true
     peerDependencies:
@@ -3604,6 +3773,7 @@ packages:
         optional: true
     dependencies:
       '@cspotcode/source-map-support': 0.7.0
+      '@swc/core': 1.2.155
       '@tsconfig/node10': 1.0.8
       '@tsconfig/node12': 1.0.9
       '@tsconfig/node14': 1.0.1

@@ -4,6 +4,9 @@ const config: Config.InitialOptions = {
   verbose: false,
   preset: 'ts-jest',
   testEnvironment: 'node',
+  transform: {
+    '^.+\\.(t|j)sx?$': '@swc/jest',
+  },
   extensionsToTreatAsEsm: ['.ts'],
   testPathIgnorePatterns: ['/node_modules/'],
   coverageDirectory: './coverage',

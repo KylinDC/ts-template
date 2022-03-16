@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "description": "personal basic typescript template",
   "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
     "format": "prettier --write .",
     "preinstall": "npx -y only-allow pnpm"
   },
@@ -21,6 +23,8 @@
   },
   "homepage": "https://github.com/KylinDC/ts-template#readme",
   "devDependencies": {
+    "@swc/core": "^1.2.155",
+    "@swc/jest": "^0.2.20",
     "@types/jest": "^26.0.24",
     "@types/node": "^16.11.10",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
