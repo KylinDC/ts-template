@@ -24,22 +24,22 @@
   "homepage": "https://github.com/KylinDC/ts-template#readme",
   "devDependencies": {
     "@arkweid/lefthook": "^0.7.7",
-    "@swc/core": "^1.2.155",
+    "@swc/core": "^1.2.165",
     "@swc/jest": "^0.2.20",
     "@types/jest": "^27.4.1",
     "@types/node": "^16.11.26",
-    "@typescript-eslint/eslint-plugin": "^4.33.0",
-    "@typescript-eslint/parser": "^4.33.0",
+    "@typescript-eslint/eslint-plugin": "^5.19.0",
+    "@typescript-eslint/parser": "^5.19.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-prettier": "^3.4.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-sonarjs": "^0.9.1",
     "jest": "^27.5.1",
-    "prettier": "^2.5.1",
-    "ts-jest": "^27.1.3",
+    "prettier": "^2.6.2",
+    "ts-jest": "^27.1.4",
     "ts-node": "^10.7.0",
-    "typescript": "^4.6.2"
+    "typescript": "^4.6.3"
   },
   "main": "index.ts"
 }
